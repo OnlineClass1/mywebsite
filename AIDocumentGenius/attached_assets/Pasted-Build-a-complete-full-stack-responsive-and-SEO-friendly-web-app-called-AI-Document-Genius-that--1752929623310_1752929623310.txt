@@ -1,0 +1,124 @@
+Build a complete, full-stack, responsive, and SEO-friendly web app called “AI Document Genius” that includes the following features:
+
+🎯 Core Features:
+Upload support for PDF, PPT, DOCX, and TXT files
+
+No file size or page limit
+
+File upload via drag & drop or file picker
+
+Disable interaction tabs (Summary, Q&A, Humanize) until file is uploaded
+
+After upload:
+
+Enable and show three distinct modes:
+
+Summarization
+
+Q&A
+
+Humanize Text
+
+Each mode must:
+
+Use AI (Gemini or OpenAI via backend only)
+
+Generate output in readable, well-structured format using:
+
+Proper headings (<h1>, <h2>), paragraphs (<p>), bullet points (<ul>), numbered lists (<ol>)
+
+Avoid long raw text blocks; the result must look like human-written blog text or notes
+
+Be optimized for SEO
+
+For Q&A: include page number reference, and explain clearly in human tone (not technical)
+
+After each result is processed, show:
+
+✅ Download button (to export .txt)
+
+✅ Copy to Clipboard button
+
+🔐 Security & Backend (Important):
+All AI interactions (summarization, Q&A, humanizing) must go through the backend only
+
+Do NOT expose API keys in frontend
+
+Use Node.js (Express) or Python Flask for backend
+
+Store API keys in .env file
+
+Support Gemini-pro or OpenAI GPT-4 for backend processing
+
+💡 Advanced Interface Features:
+Display tabbed or toggle views for:
+
+Summary
+
+Q&A
+
+Humanize
+
+Original Preview
+
+Highlight content sections linked to Q&A results
+
+Only show Download and Copy buttons after output is generated (not before)
+
+Add file processing animation / loading spinner
+
+Show messages like:
+
+“Smart Summary Ready!”
+
+“Here’s your Humanized Version”
+
+“Ask your question from the document below”
+
+🧼 UI/UX & Visual Design:
+Remove any default top download bar or clutter
+
+Use clean, modern design:
+
+Gradient or soft color backgrounds
+
+Rounded cards
+
+Glowing interactive buttons
+
+Shadowed components
+
+Fully responsive across mobile, tablet (iPhone, iPad), and desktop
+
+Support light/dark mode toggle
+
+📈 SEO Optimization:
+Use semantic HTML structure:
+
+Use <h1>, <h2>, <ul>, <ol>, <p>, etc.
+
+Add <title> and <meta description>:
+
+Title: “AI Document Genius – Summarize, Rewrite, Ask Any Document with AI”
+
+Meta: “Summarize, rewrite, or ask questions from any PDF, PPT, DOCX or text file using free AI. Smart, human-readable results.”
+
+📥 Tech Stack:
+Layer	Tool
+Frontend	React + Tailwind CSS
+Backend	Node.js (Express) or Python Flask
+File Upload	multer (Node) or Flask-Uploads (Python)
+AI Model	Gemini or OpenAI  (backend only)
+Downloads	Backend serves .txt file for output
+Copy Button	navigator.clipboard.writeText() via React
+
+✅ Bonus Features:
+Save recent uploads to browser local storage
+
+Auto-scroll to newly generated content
+
+Optionally show file preview
+
+Animate transitions between tabbed modes
+
+Support multiple questions and multiple answers from same file
